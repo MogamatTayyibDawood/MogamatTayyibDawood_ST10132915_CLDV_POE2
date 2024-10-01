@@ -62,18 +62,22 @@ Functions Overview
 1. ProcessQueueMessage
 
 This function allows users to add messages to an Azure Storage Queue. It validates input parameters to ensure that both the queue name and message content are provided. Upon successful execution, it sends the message to the specified queue.
+
 2. StoreTableInfo
 
 This function is responsible for storing data in an Azure Table. It requires the specification of the table name, partition key, row key, and the actual data to be stored. The function checks for valid input and creates the table if it does not already exist. After storing the data, it confirms successful operation.
+
 3. UploadBlob
 
 This function enables users to upload files to Azure Blob Storage. Users must provide the container name and the desired blob name for the file. The function checks for the presence of a file in the request, uploads it to the specified container, and handles any errors related to missing input.
+
 4. UploadFile
 
 This function uploads files to Azure File Storage. It requires the user to specify the name of the file share and the file name. The function creates the share if it does not exist and uploads the specified file. It also includes error handling for invalid input parameters.
 Error Handling
 
 Each function includes error handling to provide meaningful feedback when input validation fails. Common error responses include missing required parameters, allowing users to correct their requests effectively.
+
 Additional Information
 
     Logging: The application uses logging capabilities to capture relevant information during function execution, which is helpful for debugging and monitoring purposes.
