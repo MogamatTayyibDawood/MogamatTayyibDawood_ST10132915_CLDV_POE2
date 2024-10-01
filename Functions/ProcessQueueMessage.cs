@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CLDV6212POEFunctionApp.Functions
 {
+    //Add function to process messages in Azure Queue
     public static class ProcessQueueMessage
     {
         [Function("ProcessQueueMessage")]
