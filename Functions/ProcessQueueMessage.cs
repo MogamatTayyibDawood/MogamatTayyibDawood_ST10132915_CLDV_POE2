@@ -20,6 +20,7 @@ namespace CLDV6212POEFunctionApp.Functions
             string message = req.Query["message"];
 
             // Validate input
+            //Improve error handling in ProcessQueueMessage function
             if (string.IsNullOrEmpty(queueName) || string.IsNullOrEmpty(message))
             {
                 return new BadRequestObjectResult("Queue name and message must be provided.");
