@@ -22,6 +22,7 @@ namespace CLDV6212POEFunctionApp.Functions
             string data = req.Query["data"];
 
             // Validate inputs
+            //Add error handling for StoreTableInfo function
             if (string.IsNullOrEmpty(tableName) || string.IsNullOrEmpty(partitionKey) || string.IsNullOrEmpty(rowKey) || string.IsNullOrEmpty(data))
             {
                 return new BadRequestObjectResult("Table name, partition key, row key, and data must be provided.");
