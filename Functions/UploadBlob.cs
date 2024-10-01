@@ -21,6 +21,7 @@ namespace CLDV6212POEFunctionApp.Functions
             var file = req.Form.Files.GetFile("file");
 
             // Validate input
+            //Enhance error handling in UploadBlob function
             if (string.IsNullOrEmpty(containerName) || string.IsNullOrEmpty(blobName) || file == null)
             {
                 return new BadRequestObjectResult("Container name, blob name, and file must be provided.");
