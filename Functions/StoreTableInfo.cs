@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace CLDV6212POEFunctionApp.Functions
 {
-    
+    //Add function to store information in Azure tables
     public static class StoreTableInfo
     {
         [Function("StoreTableInfo")]
