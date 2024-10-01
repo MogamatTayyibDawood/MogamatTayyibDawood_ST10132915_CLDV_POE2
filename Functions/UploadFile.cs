@@ -20,6 +20,7 @@ namespace CLDV6212POEFunctionApp.Functions
             string fileName = req.Query["fileName"];
 
             // Validate input
+            //Add error handling in UploadFile function
             if (string.IsNullOrEmpty(shareName) || string.IsNullOrEmpty(fileName))
             {
                 return new BadRequestObjectResult("Share name and file name must be provided.");
