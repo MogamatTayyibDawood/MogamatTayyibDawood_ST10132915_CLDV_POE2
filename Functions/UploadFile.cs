@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CLDV6212POEFunctionApp.Functions
 {
+    //Add function to upload files to Azure Files
     public static class UploadFile
     {
         [Function("UploadFile")]
