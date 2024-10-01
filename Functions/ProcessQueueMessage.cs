@@ -38,4 +38,3 @@ namespace CLDV6212POEFunctionApp.Functions
             return new OkObjectResult("Message added to queue");
         }
     }
-}//xhanges

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace CLDV6212POEFunctionApp.Functions
 {
+    
     public static class StoreTableInfo
     {
         [Function("StoreTableInfo")]
