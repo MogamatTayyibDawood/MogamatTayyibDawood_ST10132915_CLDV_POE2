@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace CLDV6212POEFunctionApp.Functions
 {
+    //Add function to upload files to Azure Blob Storage
     public static class UploadBlob
     {
         [Function("UploadBlob")]
