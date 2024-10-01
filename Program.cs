@@ -5,6 +5,7 @@ using Microsoft.Azure.WebJobs.Extensions.Storage.Queues;
 using Microsoft.Azure.Functions.Worker;
 using Microsoft.Extensions.DependencyInjection;
 //Function App
+//PART 1 HAS CHANGES AS WELL
 var host = new HostBuilder()
     .ConfigureFunctionsWebApplication()
     .ConfigureServices(services =>
